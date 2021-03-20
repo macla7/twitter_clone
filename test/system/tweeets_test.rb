@@ -14,7 +14,7 @@ class TweeetsTest < ApplicationSystemTestCase
     visit tweeets_url
     click_on "New Tweeet"
 
-    fill_in "Tweet", with: @tweeet.tweet
+    fill_in "Tweeet", with: @tweeet.tweeet
     click_on "Create Tweeet"
 
     assert_text "Tweeet was successfully created"
@@ -25,7 +25,7 @@ class TweeetsTest < ApplicationSystemTestCase
     visit tweeets_url
     click_on "Edit", match: :first
 
-    fill_in "Tweet", with: @tweeet.tweet
+    fill_in "Tweeet", with: @tweeet.tweeet
     click_on "Update Tweeet"
 
     assert_text "Tweeet was successfully updated"

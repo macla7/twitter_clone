@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_20_061818) do
+ActiveRecord::Schema.define(version: 2021_03_20_211823) do
 
   create_table "tweeets", force: :cascade do |t|
-    t.text "tweet"
+    t.text "tweeet"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
